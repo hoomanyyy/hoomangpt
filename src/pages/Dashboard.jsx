@@ -347,8 +347,63 @@ Logout
 
 
 
+<div className="mobile-nav">
+
+<NavLink to="/dashboard">
+🏠
+<span>Home</span>
+</NavLink>
 
 
+<NavLink to="/documents">
+📄
+<span>Docs</span>
+</NavLink>
+
+
+<NavLink to="/billing">
+💳
+<span>Billing</span>
+</NavLink>
+
+
+<NavLink to="/settings">
+⚙
+<span>Settings</span>
+</NavLink>
+
+
+</div>
+
+{/* MOBILE NAV */}
+
+<div className="mobile-nav">
+
+<NavLink to="/dashboard">
+🏠
+<span>Home</span>
+</NavLink>
+
+
+<NavLink to="/documents">
+📄
+<span>Docs</span>
+</NavLink>
+
+
+<NavLink to="/billing">
+💳
+<span>Billing</span>
+</NavLink>
+
+
+<NavLink to="/settings">
+⚙
+<span>Settings</span>
+</NavLink>
+
+
+</div>
 
 <main className="main">
 
@@ -421,7 +476,10 @@ Current Plan
 </h2>
 
 
-<button>
+<button
+className="primary"
+onClick={()=>navigate("/billing")}
+>
 Upgrade
 </button>
 
