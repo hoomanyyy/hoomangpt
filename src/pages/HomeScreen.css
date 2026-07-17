@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Vazirmatn",sans-serif;
+}
+
+body{
+    background:#09090b;
+    color:#fff;
+}
+
+a{
+    text-decoration:none;
+}
+
+.home{
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    padding:0 8%;
+    direction:rtl;
+
+    background:
+    radial-gradient(circle at top left,#3b2f0f 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#103b39 0%,transparent 35%),
+    #09090b;
+}
+
+
+/* ================= Background ================= */
+
+.bg-circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+    z-index:0;
+}
+
+.bg-circle.one{
+    width:420px;
+    height:420px;
+    background:#ffb30055;
+    top:-120px;
+    right:-120px;
+}
+
+.bg-circle.two{
+    width:380px;
+    height:380px;
+    background:#00d5c455;
+    bottom:-120px;
+    left:-120px;
+}
+
+
+/* ================= Navbar ================= */
+/* Navbar */
+
+.navbar{
+    position:relative;
+    z-index:5;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:35px 0;
+}
+
+
+/* Logo سمت راست */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    direction:rtl;
+}
+
+
+.logo-icon{
+    width:60px;
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    flex-shrink:0;
+
+    border-radius:18px;
+
+    font-size:28px;
+
+    background:linear-gradient(135deg,#ffbf3d,#ff8900);
+
+    box-shadow:0 0 30px #ffb30055;
+}
+
+
+/* متن لوگو */
+
+.logo div:last-child{
+    text-align:right;
+}
+
+
+.logo h2{
+    font-size:28px;
+    margin:0;
+    line-height:1.4;
+}
+
+
+.logo span{
+    display:block;
+    color:#b5b5b5;
+    font-size:14px;
+}
+
+
+
+/* دکمه های سمت چپ */
+
+.nav-buttons{
+    display:flex;
+    gap:15px;
+    direction:ltr;
+}
+
+
+/* ================= Buttons ================= */
+
+.btn{
+
+    padding:13px 28px;
+
+    border-radius:14px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+}
+
+
+.primary{
+
+    background:
+    linear-gradient(135deg,#ffc83d,#ff9800);
+
+    color:#111;
+
+}
+
+
+.primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 15px 35px rgba(255,180,0,.35);
+
+}
+
+
+.ghost{
+
+    border:
+    1px solid rgba(255,255,255,.15);
+
+    background:
+    rgba(255,255,255,.05);
+
+    color:white;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.ghost:hover{
+
+    background:
+    rgba(255,255,255,.12);
+
+}
+
+
+.large{
+
+    padding:16px 36px;
+
+    font-size:18px;
+
+}
+
+
+
+/* ================= Hero ================= */
+
+.hero{
+
+    position:relative;
+
+    z-index:5;
+
+    max-width:850px;
+
+    margin:80px auto;
+
+    text-align:center;
+
+}
+
+
+.badge{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:
+    rgba(255,184,0,.12);
+
+    border:
+    1px solid rgba(255,184,0,.3);
+
+    color:#ffd54d;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:68px;
+
+    font-weight:900;
+
+    line-height:1.35;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero h1 span{
+
+    display:block;
+
+    color:#ffc83d;
+
+}
+
+
+
+.hero p{
+
+    color:#b8b8b8;
+
+    font-size:20px;
+
+    line-height:2;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+/* ================= Features ================= */
+
+
+.features{
+
+    position:relative;
+
+    z-index:5;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+    margin-top:120px;
+
+}
+
+
+
+.card{
+
+    background:
+    rgba(255,255,255,.05);
+
+    backdrop-filter:blur(18px);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:35px;
+
+    transition:.35s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#ffbf3d;
+
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.35);
+
+}
+
+
+
+.card .icon{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    background:
+    linear-gradient(135deg,#ffbf3d,#ff9800);
+
+    margin-bottom:25px;
+
+}
+
+
+.card h3{
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+
+.card p{
+
+    color:#bdbdbd;
+
+    line-height:2;
+
+}
+
+
+
+/* ================= Stats ================= */
+
+.stats{
+
+    position:relative;
+
+    z-index:5;
+
+    margin-top:120px;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+.stat{
+
+    background:
+    rgba(255,255,255,.04);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    backdrop-filter:blur(15px);
+
+}
+
+
+.stat h2{
+
+    font-size:48px;
+
+    color:#ffbf3d;
+
+    margin-bottom:10px;
+
+}
+
+
+.stat span{
+
+    color:#bdbdbd;
+
+}
+
+
+
+/* ================= Footer ================= */
+
+
+footer{
+
+    position:relative;
+
+    z-index:5;
+
+    margin-top:120px;
+
+    padding:40px 0;
+
+    text-align:center;
+
+    color:#888;
+
+    border-top:
+    1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+/* ================= Responsive ================= */
+
+
+@media(max-width:992px){
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+.stats{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.home{
+
+    padding:0 20px;
+
+}
+
+
+.navbar{
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+.logo{
+
+    width:100%;
+
+    justify-content:center;
+
+}
+
+
+.logo-text{
+
+    text-align:right;
+
+}
+
+
+.nav-buttons{
+
+    width:100%;
+
+}
+
+
+.nav-buttons .btn{
+
+    flex:1;
+
+}
+
+
+
+.hero{
+
+    margin-top:40px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+
+
+.features{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+
+
+.btn{
+
+    width:100%;
+
+}
+
+
+
+}
