@@ -2,6 +2,14 @@
 
 An AI-focused web application built with **React** and **Vite**, exploring modern frontend development and AI-powered user experiences.
 
+🔗 Backend
+
+The backend/API for this project is maintained in a separate repository:
+
+HoomanGPT Backend
+
+The frontend communicates with the backend through API requests.
+
 ## 🚀 Overview
 
 **HoomanGPT** is a web-based project focused on building an interactive AI application with a modern React frontend.
